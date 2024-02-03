@@ -1,4 +1,8 @@
 import React from 'react';
+import github from '../icons/github.svg'
+import email from '../icons/github.svg'
+import linkedin from '../icons/github.svg'
+
 
 const About = () => {
   return <div>
@@ -6,7 +10,7 @@ const About = () => {
     <div>
       <p>words</p>
     </div>
-    <svg>github</svg>
+    <svg>{github}</svg>
     <svg>email</svg>
     <svg>linkedin</svg>
   </div>;

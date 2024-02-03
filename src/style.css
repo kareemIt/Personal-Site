@@ -55,7 +55,7 @@ li a:hover:not(.active) {
     box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.75);
 }
 .skills-container{
-  background-color: grey;
+  background-color: #F7F7F7;
 }
 .outter-cert-container{
   display: flex;
