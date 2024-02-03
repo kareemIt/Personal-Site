@@ -4,6 +4,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
@@ -17,11 +18,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: transparent;
-  /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
 }
 li {
   float: left;
@@ -29,7 +25,7 @@ li {
 
 li a {
   display: block;
-  color: black;
+  color: #333;
   text-align: center;
   background: transparent;
   padding: 14px 16px;
@@ -48,7 +44,13 @@ li a:hover:not(.active) {
   width: 100%;
 }
 .nav{
-  
+  /* opacity: 0; */
+  position: absolute;
+  z-index: 1;
+  width: 100%; 
+}
+.right-nav{
+  float: right;
 }
 
 
@@ -111,6 +113,7 @@ li a:hover:not(.active) {
   padding-top: 110px;
   
 }
+
 
 
 
