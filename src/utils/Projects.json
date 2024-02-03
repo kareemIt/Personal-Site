@@ -2,22 +2,22 @@
     "projects":[
        {
           "name":"Neon Wordle",
-          "link":"1",
+          "link":"https://github.com/kareemIt/Neon-Wordle",
           "description":"$661 B"
        },
        {
           "name":"Personal Website",
-          "link":"1",
+          "link":"https://github.com/kareemIt/Personal-Site",
           "description":"$661 B"
        },
        {
           "name":"Pokemon Randomizer",
-          "link":"1",
+          "link":"https://github.com/kareemIt/Pokemon-spin-the-wheel",
           "description":"$661 B"
        },
        {
           "name":"Worddom",
-          "link":"1",
+          "link":"https://github.com/kareemIt/Worddom",
           "description":"$661 B"
        }
     ]
