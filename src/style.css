@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
@@ -112,6 +114,8 @@ li a:hover:not(.active) {
 }
 .about{
   padding-top: 110px;
+  max-width: 600px;
+  margin: auto;
   
 }
 .traits{
