@@ -62,7 +62,6 @@ li a:hover:not(.active) {
     display: flex;
     background-color: white;
     border-radius: 8px;
-    /* box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.75); */
     --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
@@ -72,13 +71,15 @@ li a:hover:not(.active) {
 }
 .outter-cert-container{
   display: flex;
+  justify-content: center;
 }
 .cert{
-  font-size: 25px;
+  font-size: 20px;
   border-bottom: black solid 2px;
   padding: 10px;
   margin: 10px;
   display: flex;
+  align-items: center;
 }
 .button{
   background: none;
@@ -113,6 +114,13 @@ li a:hover:not(.active) {
   padding-top: 110px;
   
 }
+.traits{
+  font-size: 2em;
+}
+.about-icons{
+  margin: 10px;
+  padding: 10px;
+}
 
 
 
@@ -125,9 +133,11 @@ li a:hover:not(.active) {
 
 
 /*waves css*/
-h1 {
+.name {
   font-weight: 800;
   font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 48px;
 }
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 

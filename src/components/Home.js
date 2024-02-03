@@ -31,9 +31,9 @@ const Home = () => {
           d="M57,283"
         /> */}
         <div>
-        <h1>Hey, I am Kareem Itani</h1>
-        <div className='traits'>
-        <h2>{trait}</h2>
+        <h1 className='name'>Hey, I am Kareem Itani</h1>
+        <div >
+        <h1 className='traits'>{trait}</h1>
         </div>
         </div>
       </div>

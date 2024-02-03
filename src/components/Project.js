@@ -1,5 +1,6 @@
 import React from 'react';
 import projectInfo from "../utils/Projects.json"
+import share from '../icons/share.svg'
 
 const Project = () => {
   return <div>
@@ -9,7 +10,7 @@ const Project = () => {
         <div className='project-container' key={index}>
                 <h1>{project.name}</h1>
                 <h1>{project.description}</h1>
-                <button className='button'>{project.link}</button>
+                <img src={share} className='button'/> 
                 </div>
             ))}
     </div>
