@@ -23,13 +23,13 @@ const Home = () => {
   return (
     <div className="header">
       <div className="inner-header flex">
-        <path
+        {/* <path
           fill="#FFFFFF"
           stroke="#000000"
           strokeWidth="10"
           strokeMiterlimit="10"
           d="M57,283"
-        />
+        /> */}
         <div>
         <h1>Hey, I am Kareem Itani</h1>
         <div className='traits'>

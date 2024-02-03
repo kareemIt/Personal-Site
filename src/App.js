@@ -6,7 +6,7 @@ import About from './components/About';
 import Project from './components/Project';
 import Skills from './components/Skills';
 import Certs from './components/Certs'
-import github from './icons/github.svg'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -19,6 +19,7 @@ export default function App() {
         <Certs />
       </div>
       <Project />
+      <Footer />
     </div>
   );
 }
