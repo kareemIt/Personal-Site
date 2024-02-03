@@ -3,12 +3,15 @@ import ProjectContainer from "./ProjectContainer"
 import projectInfo from "../utils/Projects.json"
 
 const Project = () => {
-  console.dir(projectInfo.projects)
   return <div>
     <h1>Project</h1>
     <div>
-      {projectInfo.projects.map((pro, index) => (
-              <ProjectContainer pro={pro}  key={index} />
+      {projectInfo.projects.map((project, index) => (
+        <div>
+                <h1>{project.name}</h1>
+                <h1>{project.description}</h1>
+                <h1>{project.link}</h1>
+                </div>
             ))}
     </div>
   </div>;

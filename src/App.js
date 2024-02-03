@@ -5,7 +5,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Project from './components/Project';
 import Skills from './components/Skills';
-
+import Certs from './components/Certs';
 
 export default function App() {
   return (
@@ -13,7 +13,10 @@ export default function App() {
       <Nav />
       <Home />
       <About />
-      <Skills />
+      <div className='skills-container'>
+        <Skills />
+        <Certs />
+      </div>
       <Project />
     </div>
   );
