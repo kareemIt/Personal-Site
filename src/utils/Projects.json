@@ -1,0 +1,25 @@
+{
+    "projects":[
+       {
+          "name":"Neon Wordle",
+          "link":"1",
+          "description":"$661 B"
+       },
+       {
+          "name":"Personal Website",
+          "link":"1",
+          "description":"$661 B"
+       },
+       {
+          "name":"Pokemon Randomizer",
+          "link":"1",
+          "description":"$661 B"
+       },
+       {
+          "name":"Worddom",
+          "link":"1",
+          "description":"$661 B"
+       }
+    ]
+ }
+ 

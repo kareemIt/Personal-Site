@@ -8,17 +8,17 @@ const Home = () => {
   const [trait, setTrait] = useState(traits[0]);
   const [counter, setCounter] = useState(0);
 
-  useEffect(() => {
-    if (counter >= 4) setCounter(0);
+  // useEffect(() => {
+  //   if (counter >= 4) setCounter(0);
 
-    const updateCounter = setInterval(() => {
-      setTrait(traits[0]);
-      setCounter(counter + 1);
-    }, 1000);
-    return () => {
-      clearInterval(updateCounter);
-    };
-  }, [counter]);
+  //   const updateCounter = setInterval(() => {
+  //     setTrait(traits[counter]);
+  //     setCounter(counter + 1);
+  //   }, 3000);
+  //   return () => {
+  //     clearInterval(updateCounter);
+  //   };
+  // }, [counter])
 
   return (
     <div className="header">

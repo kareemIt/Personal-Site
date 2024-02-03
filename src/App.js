@@ -3,6 +3,8 @@ import './style.css';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import About from './components/About';
+import Project from './components/Project';
+import Skills from './components/Skills';
 
 
 export default function App() {
@@ -11,6 +13,8 @@ export default function App() {
       <Nav />
       <Home />
       <About />
+      <Skills />
+      <Project />
     </div>
   );
 }
