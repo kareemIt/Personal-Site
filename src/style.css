@@ -36,8 +36,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-  color: #2F80ED;
-  border-bottom: 1px solid #2F80ED;
+  color: white;
 }
 
 .sticky {
@@ -58,9 +57,9 @@ li a:hover:not(.active) {
 
 .cert-container{
     justify-content: center;
-    border: black solid 1px;
     padding: 10px;
     margin: 10px;
+    max-width: 400px;
     display: flex;
     background-color: white;
     border-radius: 8px;
@@ -74,6 +73,10 @@ li a:hover:not(.active) {
 .outter-cert-container{
   display: flex;
   justify-content: center;
+  max-width: 900px;
+  margin: auto;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 .cert{
   font-size: 20px;
@@ -94,9 +97,9 @@ li a:hover:not(.active) {
 }
 
 .project-container{
-  border: 2px solid black;
+  padding: 10px;
   border-radius:  8px;
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+  --tw-shadow: 0 13px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
 }
@@ -105,6 +108,13 @@ li a:hover:not(.active) {
   grid-template-columns: repeat(2, 1.2fr);
   column-gap: 20px;
   row-gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.title{
+  width: 70vh;
+  align-self: center;
+  text-align: left;
 }
 
 .footer{
@@ -112,11 +122,28 @@ li a:hover:not(.active) {
   width: 100%;
   background: #F7F7F7;
 }
-.about{
-  padding-top: 110px;
+.parent-container{
+  justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.skills{
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+}
+.text{
+  padding-top: 10px;
   max-width: 600px;
   margin: auto;
-  
 }
 .traits{
   font-size: 2em;
@@ -124,6 +151,16 @@ li a:hover:not(.active) {
 .about-icons{
   margin: 10px;
   padding: 10px;
+}
+h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+p {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: #333333;
 }
 
 
@@ -145,20 +182,6 @@ li a:hover:not(.active) {
 }
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
-body {
-  /* margin: 0; */
-}
-
-h1 {
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 48px;
-}
-p {
-  letter-spacing: 1px;
-  font-size: 14px;
-  color: #333333;
-}
 
 .header {
   position: relative;

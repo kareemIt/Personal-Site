@@ -31,7 +31,7 @@ const Home = () => {
           d="M57,283"
         /> */}
         <div>
-        <h1 className='name'>Hey, I am Kareem Itani</h1>
+        <h1 className='name'>Kareem Itani</h1>
         <div >
         <h1 className='traits'>{trait}</h1>
         </div>
