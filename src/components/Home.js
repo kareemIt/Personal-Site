@@ -8,12 +8,33 @@ const Home = () => {
   const [trait, setTrait] = useState(traits[0]);
   const [counter, setCounter] = useState(0);
 
+//   const div = document.querySelector('div');
+
+// const wait = ms => new Promise(res => setTimeout(res, ms));
+// async function main() {
+//   for (const word of text) {
+//     div.textContent = word;
+
+//     const keyframes = [{
+//       opacity: 0,
+//       transform: 'translateY(-5px)',
+//     }, {
+//       opacity: 1,
+//       transform: 'translateY(0px)',
+//     }];
+//     div.animate(keyframes, { duration: 200 });
+
+//     await wait(500)
+//   }
+// }
+// main()
   useEffect(() => {
     if (counter >= 4) setCounter(0);
 
     const updateCounter = setInterval(() => {
       setTrait(traits[counter]);
       setCounter(counter + 1);
+      //add select tag then readd the class to make it redo animation?
     }, 3000);
     return () => {
       clearInterval(updateCounter);
@@ -33,7 +54,7 @@ const Home = () => {
         <div>
         <h1 className='name'>Kareem Itani</h1>
         <div >
-        <h1 className='traits'>{trait}</h1>
+        <h1 className='fade-in-image'>{trait}</h1>
         </div>
         </div>
       </div>
