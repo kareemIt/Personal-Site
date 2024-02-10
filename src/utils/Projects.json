@@ -3,22 +3,22 @@
        {
           "name":"Neon Wordle",
           "link":"https://github.com/kareemIt/Neon-Wordle",
-          "description":"$661 B"
+          "description":"So, I basically took Wordle apart, sprinkled a bit of magic, and turned it into this lively React app. It's like the game met a neon carnival and they hit it off – the challenge is still there, but now it's all flashy and fun! "
        },
        {
           "name":"Personal Website",
           "link":"https://github.com/kareemIt/Personal-Site",
-          "description":"$661 B"
+          "description":"Just crafted my personal site – it's kind of my online playground! You'll find a dynamic vibe, smooth transitions. Take a spin and let me know what you think! "
        },
        {
           "name":"Pokemon Randomizer",
           "link":"https://github.com/kareemIt/Pokemon-spin-the-wheel",
-          "description":"$661 B"
+          "description":"Cooked up a React app that's like a virtual Pokémon slot machine! Picture this: you pull the lever, and bam! Two random Pokémon pop up with all the deets from the massive PokeAPI database. "
        },
        {
           "name":"Worddom",
           "link":"https://github.com/kareemIt/Worddom",
-          "description":"$661 B"
+          "description":"Meet Worrdom – the speedy word game where 8 letters challenge you to craft a legit 5-letter word in just 60 seconds. Nail it for +10 seconds, goof up with a fake one, and it's -5 seconds. Can you beat the clock and conquer Worrdom? "
        }
     ]
  }
