@@ -32,9 +32,15 @@ const Home = () => {
     if (counter >= 4) setCounter(0);
 
     const updateCounter = setInterval(() => {
+      const h1 = document.querySelector('#trait');
+      console.dir(h1.classList)
+      if(h1.classList.value == "fade-in-image" ){
+        h1.classList.add('ab');
+      }
+      h1.classList.add('fade-in-image');
+
       setTrait(traits[counter]);
       setCounter(counter + 1);
-      //add select tag then readd the class to make it redo animation?
     }, 3000);
     return () => {
       clearInterval(updateCounter);
@@ -44,17 +50,10 @@ const Home = () => {
   return (
     <div className="header">
       <div className="inner-header flex">
-        {/* <path
-          fill="#FFFFFF"
-          stroke="#000000"
-          strokeWidth="10"
-          strokeMiterlimit="10"
-          d="M57,283"
-        /> */}
         <div>
         <h1 className='name'>Kareem Itani</h1>
-        <div >
-        <h1 className='fade-in-image'>{trait}</h1>
+        <div>
+        <h1 id='trait' className='fade-in-image'>{trait}</h1>
         </div>
         </div>
       </div>
