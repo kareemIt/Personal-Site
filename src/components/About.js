@@ -10,9 +10,15 @@ const About = () => {
     <div className='text'>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <div className='about-icons'>
-      <img src={email} className='button'/> 
-      <img src={github} className='button'/> 
-      <img src={linkedin} className='button'/> 
+      <a href="https://www.w3schools.com/">
+      <img src={email}  className='button'/> 
+      </a>
+      <a href="https://github.com/kareemIt">
+      <img src={github}  className='button'/> 
+      </a>
+      <a href="https://www.linkedin.com/in/kareem-itani/">
+      <img src={linkedin}  className='button'/> 
+      </a>
     </div>
     </div>
   </div>;

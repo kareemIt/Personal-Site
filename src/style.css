@@ -97,13 +97,11 @@ li a:hover:not(.active) {
   align-items: center;
 }
 .button{
-  background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
 	cursor: pointer;
-	outline: inherit;
+  opacity: .5;
+}
+.button:hover {
+  opacity: 1;
 }
 .icon{
 
@@ -163,8 +161,10 @@ li a:hover:not(.active) {
   font-size: 2em;
 }
 .about-icons{
-  margin: 10px;
-  padding: 10px;
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  padding-top: 1rem;
 }
 h1 {
   font-weight: 300;

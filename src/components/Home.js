@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 const Home = () => {
   let traits = [
     "Software Engineer","Bouldering enjoyer",
-    "friendly neighborhood developer","ux/ui doer"
+    "Friendly neighborhood developer","UX/UI doer"
   ];
   const [trait, setTrait] = useState(traits[0]);
   const [counter, setCounter] = useState(0);
-  
+
   useEffect(() => {
     if (counter >= 4) setCounter(0);
 

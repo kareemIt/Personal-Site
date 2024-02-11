@@ -9,8 +9,10 @@ const Certs = () => {
     <div className='outter-cert-container'>
       {CertInfo.Certs.map((cert, index) => (
         <div className='cert-container' key={index}>
-            <p className='cert' key={index}>{cert.name}  
+            <p className='cert' key={index}>{cert.name}
+            <a href={cert.link}>
               <img src={share} className='button'/> 
+              </a>
               </p>
             </div>
             ))}
