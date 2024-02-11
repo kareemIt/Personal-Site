@@ -7,40 +7,23 @@ const Home = () => {
   ];
   const [trait, setTrait] = useState(traits[0]);
   const [counter, setCounter] = useState(0);
-
-//   const div = document.querySelector('div');
-
-// const wait = ms => new Promise(res => setTimeout(res, ms));
-// async function main() {
-//   for (const word of text) {
-//     div.textContent = word;
-
-//     const keyframes = [{
-//       opacity: 0,
-//       transform: 'translateY(-5px)',
-//     }, {
-//       opacity: 1,
-//       transform: 'translateY(0px)',
-//     }];
-//     div.animate(keyframes, { duration: 200 });
-
-//     await wait(500)
-//   }
-// }
-// main()
+  
   useEffect(() => {
     if (counter >= 4) setCounter(0);
 
-    const updateCounter = setInterval(() => {
+    const updateCounter = setInterval(async () => {
+      const wait = ms => new Promise(res => setTimeout(res, ms));
       const h1 = document.querySelector('#trait');
-      console.dir(h1.classList)
-      if(h1.classList.value == "fade-in-image" ){
-        h1.classList.add('ab');
+      if (h1.classList.contains("fade-in-image")) {
+        h1.classList.remove('fade-in-image');
+        await wait(500)
       }
       h1.classList.add('fade-in-image');
 
-      setTrait(traits[counter]);
+      // await wait(800)
+  
       setCounter(counter + 1);
+      setTrait(traits[counter]);
     }, 3000);
     return () => {
       clearInterval(updateCounter);

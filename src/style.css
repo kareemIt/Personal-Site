@@ -55,7 +55,7 @@ li a:hover:not(.active) {
   float: right;
 }
 
-.fade-in-image { animation: fadeIn 5s; }
+.fade-in-image { animation: fadeIn 4s; }
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -77,6 +77,8 @@ li a:hover:not(.active) {
 }
 .skills-container{
   background-color: #F7F7F7;
+  padding: 1rem;
+  margin: auto;
 }
 .outter-cert-container{
   display: flex;
@@ -134,11 +136,9 @@ li a:hover:not(.active) {
   background: #F7F7F7;
 }
 .parent-container{
-  justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
 }
 .skills{
     display: grid;
