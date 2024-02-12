@@ -22,8 +22,8 @@ const Skills = () => {
     [postgresSQL,"PostgresSQL"],[spring,"Spring"]
   ]
   );
-  return <div> 
-    <h1 className='title'>Skills</h1>
+  return <div className='skills-title'> 
+    <h1>Skills</h1>
     <div className='skills'>
     {skills.map((skill) => (
           <div>

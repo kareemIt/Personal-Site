@@ -38,9 +38,10 @@ const Home = () => {
         <div>
         <h1 id='trait' className='fade-in-image'>{trait}</h1>
         </div>
+        
         </div>
+        
       </div>
-      <div>
         <svg
           className="waves"
           xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +78,6 @@ const Home = () => {
             <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
           </g>
         </svg>
-      </div>
     </div>
   );
 };
