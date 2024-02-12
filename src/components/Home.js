@@ -7,24 +7,21 @@ const Home = () => {
   ];
   const [trait, setTrait] = useState(traits[0]);
   const [counter, setCounter] = useState(0);
+  const wait = ms => new Promise(res => setTimeout(res, ms));
 
   useEffect(() => {
     if (counter >= 4) setCounter(0);
 
     const updateCounter = setInterval(async () => {
-      const wait = ms => new Promise(res => setTimeout(res, ms));
       const h1 = document.querySelector('#trait');
       if (h1.classList.contains("fade-in-image")) {
         h1.classList.remove('fade-in-image');
-        await wait(500)
+        await wait(5000)
       }
       h1.classList.add('fade-in-image');
-
-      // await wait(800)
-  
       setCounter(counter + 1);
       setTrait(traits[counter]);
-    }, 3000);
+    }, 5000);
     return () => {
       clearInterval(updateCounter);
     };
@@ -33,14 +30,8 @@ const Home = () => {
   return (
     <div className="header">
       <div className="inner-header flex">
-        <div>
         <h1 className='name'>Kareem Itani</h1>
-        <div>
         <h1 id='trait' className='fade-in-image'>{trait}</h1>
-        </div>
-        
-        </div>
-        
       </div>
         <svg
           className="waves"
