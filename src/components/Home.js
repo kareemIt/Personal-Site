@@ -3,25 +3,26 @@ import React, { useState, useEffect } from 'react';
 const Home = () => {
   let traits = [
     "Software Engineer","Bouldering enjoyer",
-    "Friendly neighborhood developer","UX/UI doer"
+    "Friendly neighborhood developer","UX Enchanter & UI Charmer"
   ];
   const [trait, setTrait] = useState(traits[0]);
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1);
   const wait = ms => new Promise(res => setTimeout(res, ms));
 
   useEffect(() => {
     if (counter >= 4) setCounter(0);
 
     const updateCounter = setInterval(async () => {
+      console.log(counter)
       const h1 = document.querySelector('#trait');
       if (h1.classList.contains("fade-in-image")) {
         h1.classList.remove('fade-in-image');
-        await wait(5000)
+        await wait(2000)
       }
       h1.classList.add('fade-in-image');
       setCounter(counter + 1);
       setTrait(traits[counter]);
-    }, 5000);
+    }, 4000);
     return () => {
       clearInterval(updateCounter);
     };
