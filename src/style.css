@@ -109,6 +109,9 @@ li a:hover:not(.active) {
   width: 3em;
   height: auto;
 }
+.button-link:hover{
+  opacity: 1;
+}
 .button:hover {
   opacity: 1;
 }
