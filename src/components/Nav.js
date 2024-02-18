@@ -3,12 +3,12 @@ import React from 'react';
 const Nav = () => {
   return <div className='nav'>
     <ul>
-      <li><a href="default.asp">Kareem Itani</a></li>
+      <li><a className='me-nav'>Kareem Itani</a></li>
     <div className='right-nav'>
-      <li><a href="default.asp">Home</a></li>
-      <li><a href="news.asp">About</a></li>
-      <li><a href="contact.asp">Skills</a></li>
-      <li><a href="about.asp">Project</a></li>
+      <li><a href="home.asp">Home</a></li>
+      <li><a href="about.asp">About</a></li>
+      <li><a href="skills.asp">Skills</a></li>
+      <li><a href="project.asp">Project</a></li>
     </div>
   </ul>
   </div>;

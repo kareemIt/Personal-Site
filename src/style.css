@@ -120,6 +120,10 @@ li a:hover:not(.active) {
   border-bottom: 2px solid black;
 }
 
+.me-nav{
+  cursor: default;
+}
+
 .project-container{
   height: 500px;
   width: 500px;
