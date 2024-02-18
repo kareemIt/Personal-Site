@@ -115,11 +115,14 @@ li a:hover:not(.active) {
 .button:hover {
   opacity: 1;
 }
-.icon{
-
+.description{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .project-container{
+  height: 500px;
+  width: 500px;
   padding: 10px;
   border-radius:  8px;
   --tw-shadow: 0 13px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
