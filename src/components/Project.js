@@ -9,7 +9,7 @@ const Project = () => {
       {projectInfo.projects.map((project, index) => (
         <div className='project-container' key={index}>
                 <h1>{project.name}</h1>
-                <h1 className='description'>{project.description}</h1>
+                <p className='description'>{project.description}</p>
                 <a href={project.link}>
                   <img src={share} className='button'/> 
                 </a>

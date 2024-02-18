@@ -5,7 +5,6 @@ const Nav = () => {
     <ul>
       <li><a className='me-nav'>Kareem Itani</a></li>
     <div className='right-nav'>
-      <li><a href="home.asp">Home</a></li>
       <li><a href="about.asp">About</a></li>
       <li><a href="skills.asp">Skills</a></li>
       <li><a href="project.asp">Project</a></li>

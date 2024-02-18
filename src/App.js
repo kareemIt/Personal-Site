@@ -6,11 +6,11 @@ import About from './components/About';
 import Project from './components/Project';
 import Skills from './components/Skills';
 import Certs from './components/Certs'
-// import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 
 export default function App() {
   return (
-    // <BrowserRouter>
+    <BrowserRouter>
       <div>
         <Nav />
         <Home />
@@ -21,6 +21,6 @@ export default function App() {
         </div>
         <Project />
       </div>
-    // </BrowserRouter>
+     </BrowserRouter>
   );
 }
