@@ -103,6 +103,12 @@ li a:hover:not(.active) {
 	cursor: pointer;
   opacity: .5;
 }
+.button-link{
+	cursor: pointer;
+  opacity: .5;
+  width: 3em;
+  height: auto;
+}
 .button:hover {
   opacity: 1;
 }
