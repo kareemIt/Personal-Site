@@ -4,7 +4,7 @@ import share from '../icons/share.svg'
 
 
 const Certs = () => {
-  return <div className='parent-container'>
+  return <div className='certs-container'>
     <h1 className='title'>Certification</h1>
     <div className='outter-cert-container'>
       {CertInfo.Certs.map((cert, index) => (
