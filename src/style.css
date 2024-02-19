@@ -192,18 +192,27 @@ li a:hover {
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1.2fr);
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1.2fr); */
   column-gap: 20px;
   row-gap: 20px;
   max-width: 800px;
   margin: auto;
 }
 
+.project-name{
+  font-weight: normal;
+}
+
 .description {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top:10px;
+  padding: 5px;
 }
 
 
@@ -233,15 +242,13 @@ p {
   color: #333333;
 }
 
+
 /* fix for phone */
-.icon {}
-
-
-
-
-
-
-
+@media screen and (max-width: 900px) {
+  .icon {
+    width: 50%;
+  }
+}
 
 
 

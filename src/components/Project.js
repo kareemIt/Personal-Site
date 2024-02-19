@@ -8,7 +8,7 @@ const Project = () => {
     <div className='projects-container'>
       {projectInfo.projects.map((project, index) => (
         <div className='project-container' key={index}>
-                <h1>{project.name}</h1>
+                <h2 className='project-name'>{project.name}</h2>
                 <p className='description'>{project.description}</p>
                 <a href={project.link}>
                   <img src={share} className='button-link'/> 
