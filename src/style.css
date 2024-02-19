@@ -51,6 +51,13 @@ li a:hover {
   float: right;
 }
 
+.me-nav {
+  cursor: default;
+}
+
+
+
+/* traits animation */
 .fade-in-image {
   animation: fadeIn ease 4s;
 }
@@ -69,8 +76,67 @@ li a:hover {
   }
 }
 
+/* traits */
+.traits {
+  font-size: 2em;
+}
+
+#trait {
+  opacity: 0;
+}
+
+.parent-container {
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
 
 
+
+/* skills container */
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 10px;
+  max-width: 600px;
+  margin: 10px auto;
+  gap: 15px;
+  background-color: white;
+  border-radius: 8px;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.skills-container {
+  background-color: #F7F7F7;
+  padding: 1rem;
+  margin: auto;
+}
+
+.skills-title {
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+
+/* cets container */
+.certs-container {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.outter-cert-container {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  margin: auto;
+  flex-wrap: wrap;
+  overflow: auto;
+}
 
 .cert-container {
   justify-content: center;
@@ -85,20 +151,6 @@ li a:hover {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.skills-container {
-  background-color: #F7F7F7;
-  padding: 1rem;
-  margin: auto;
-}
-
-.outter-cert-container {
-  display: flex;
-  justify-content: center;
-  max-width: 900px;
-  margin: auto;
-  flex-wrap: wrap;
-  overflow: auto;
-}
 
 .cert {
   font-size: 20px;
@@ -129,16 +181,8 @@ li a:hover {
   opacity: 1;
 }
 
-.description {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  font-size: 1.5rem;
-}
 
-.me-nav {
-  cursor: default;
-}
-
+/* project container */
 .project-container {
   padding: 10px;
   border-radius: 8px;
@@ -156,44 +200,13 @@ li a:hover {
   margin: auto;
 }
 
-.skills-title {
-  padding: 1rem;
-  max-width: 600px;
-  margin: auto;
+.description {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 1.5rem;
 }
 
-.footer {
-  height: 150px;
-  width: 100%;
-  background: #F7F7F7;
-}
 
-.parent-container {
-  padding: 1rem;
-  max-width: 600px;
-  margin: auto;
-}
-
-.certs-container {
-  padding: 1rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-.skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  padding: 10px;
-  max-width: 600px;
-  margin: 10px auto;
-  gap: 15px;
-  background-color: white;
-  border-radius: 8px;
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
 
 .text {
   padding-top: 10px;
@@ -201,14 +214,7 @@ li a:hover {
   margin: auto;
 }
 
-.traits {
-  font-size: 2em;
-}
-
-#trait {
-  opacity: 0;
-}
-
+/* about section */
 .about-icons {
   display: flex;
   gap: 10px;
