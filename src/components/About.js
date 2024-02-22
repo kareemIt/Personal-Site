@@ -1,10 +1,11 @@
 import React from 'react';
 import github from '../icons/github.svg'
 import linkedin from '../icons/linkedin.svg'
+import {BrowserRouter, Link} from 'react-router-dom'
 
 
 const About = () => {
-  return <div className='parent-container'>
+  return <div className='parent-container' id="About">
     <h1 className='title'>About</h1>
     <div className='text'>
       <p>

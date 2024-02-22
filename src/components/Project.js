@@ -3,7 +3,7 @@ import projectInfo from "../utils/Projects.json"
 import share from '../icons/share.svg'
 
 const Project = () => {
-  return <div className='parent-container'>
+  return <div className='parent-container' id="Project">
     <h1 className='title' >Project</h1>
     <div className='projects-container'>
       {projectInfo.projects.map((project, index) => (
