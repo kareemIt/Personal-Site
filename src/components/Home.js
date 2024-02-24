@@ -5,8 +5,8 @@ const Home = () => {
     "Software Engineer", "Bouldering enjoyer",
     "Friendly neighborhood developer", "UX Enchanter & UI Charmer"
   ];
-  const [trait, setTrait] = useState(traits[0]);
-  const [counter, setCounter] = useState(1);
+  let counter = 0;
+  let [currentTrait,setCurretTrait] = useState("");
   const wait = ms => new Promise(res => setTimeout(res, ms));
   // show trait
     // add class or just change opacity in react style
@@ -20,30 +20,46 @@ const Home = () => {
     // add class or just change opacity in react style
   // repeat
     // making use of setInterval 
-  useEffect(() => {
-    if (counter >= 4) setCounter(0);
+  // useEffect(() => {
+  //   if (counter >= 4) setCounter(0);
 
-    const updateCounter = setInterval(async () => {
-      console.log(counter)
-      const h1 = document.querySelector('#trait');
-      if (h1.classList.contains("fade-in-image")) {
-        h1.classList.remove('fade-in-image');
-        await wait(2000)
-      }
-      h1.classList.add('fade-in-image');
-      setCounter(counter + 1);
-      setTrait(traits[counter]);
-    }, 4000);
+  //   const updateCounter = setInterval(async () => {
+  //     console.log(counter)
+  //     const h1 = document.querySelector('#trait');
+  //     if (h1.classList.contains("fade-in-image")) {
+  //       h1.classList.remove('fade-in-image');
+  //       await wait(2000)
+  //     }
+  //     h1.classList.add('fade-in-image');
+  //     setCounter(counter + 1);
+  //     setTrait(traits[counter]);
+  //   }, 4000);
+  //   return () => {
+  //     clearInterval(updateCounter);
+  //   };
+  // }, [counter])
+  const updateCounter = setInterval(async () => {
+    if (counter >= 4) counter = 0;
+
+    const h1 = document.querySelector('#trait');
+    if (h1.classList.contains("fade-in-image")) {
+      h1.classList.remove('fade-in-image');
+      await wait(2000)
+    }
+    h1.classList.add('fade-in-image');
+    counter++;
+    setCurretTrait(traits[counter])
     return () => {
       clearInterval(updateCounter);
     };
-  }, [counter])
+  }, 4000);
+
 
   return (
     <div className="header">
       <div className="inner-header flex">
         <h1 className='name'>Kareem Itani</h1>
-        <h1 id='trait' className='fade-in-image'>{trait}</h1>
+        <h1 id='trait' className='fade-in-image'>{currentTrait}</h1>
       </div>
       <svg
         className="waves"

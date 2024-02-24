@@ -206,6 +206,10 @@ li a:hover {
   font-weight: normal;
 }
 
+.title{
+  padding-bottom: 10px;
+}
+
 .description {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
