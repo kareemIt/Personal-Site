@@ -5,61 +5,34 @@ const Home = () => {
     "Software Engineer", "Bouldering enjoyer",
     "Friendly neighborhood developer", "UX Enchanter & UI Charmer"
   ];
-  let counter = 0;
-  let [currentTrait,setCurretTrait] = useState("");
+  let [counter,setCounter] = useState(0);
+  let [currentTrait,setCurretTrait] = useState("hi");
   const wait = ms => new Promise(res => setTimeout(res, ms));
-  // show trait
-    // add class or just change opacity in react style
-  // wait some time
-    // await wait function
-  // fade out trait
-    // remove class or just change opacity in react style
-  // update trait
-    // some javascript
-  // fade in trait
-    // add class or just change opacity in react style
-  // repeat
-    // making use of setInterval 
-  // useEffect(() => {
-  //   if (counter >= 4) setCounter(0);
 
-  //   const updateCounter = setInterval(async () => {
-  //     console.log(counter)
-  //     const h1 = document.querySelector('#trait');
-  //     if (h1.classList.contains("fade-in-image")) {
-  //       h1.classList.remove('fade-in-image');
-  //       await wait(2000)
-  //     }
-  //     h1.classList.add('fade-in-image');
-  //     setCounter(counter + 1);
-  //     setTrait(traits[counter]);
-  //   }, 4000);
-  //   return () => {
-  //     clearInterval(updateCounter);
-  //   };
-  // }, [counter])
-  const updateCounter = setInterval(async () => {
-    if (counter >= 4) counter = 0;
+  useEffect(() => {
+    if (counter >= 4) setCounter(0);
 
-    const h1 = document.querySelector('#trait');
-    if (h1.classList.contains("fade-in-image")) {
-      h1.classList.remove('fade-in-image');
-      await wait(2000)
-    }
-    h1.classList.add('fade-in-image');
-    counter++;
-    setCurretTrait(traits[counter])
+    const updateCounter = setInterval(async () => {
+      console.log(counter)
+      const h1 = document.querySelector('#trait');
+      if (h1.classList.contains("fade-in-image")) {
+        h1.classList.remove('fade-in-image');
+        await wait(1500)
+      }
+      h1.classList.add('fade-in-image');
+      setCurretTrait(traits[counter]);
+      setCounter(counter + 1);
+    }, 3500);
     return () => {
       clearInterval(updateCounter);
     };
-  }, 4000);
-
+  }, [counter])
 
   return (
     <div className="header">
       <div className="inner-header flex">
         <h1 className='name'>Kareem Itani</h1>
-        <h1 id='trait' className='fade-in-image'>{currentTrait}</h1>
+        <h1 id='trait'>{currentTrait}</h1>
       </div>
       <svg
         className="waves"
