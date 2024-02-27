@@ -252,6 +252,9 @@ p {
   .icon {
     width: 50%;
   }
+  h1 {
+    font-size: 24px;
+  }
 }
 
 
@@ -361,7 +364,7 @@ p {
 }
 
 /*Shrinking for mobile*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .waves {
     height: 40px;
     min-height: 40px;
@@ -374,4 +377,4 @@ p {
   h1 {
     font-size: 24px;
   }
-}
+} */
