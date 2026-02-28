@@ -5,23 +5,31 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Project from './components/Project';
 import Skills from './components/Skills';
-import Certs from './components/Certs'
-import { BrowserRouter} from 'react-router-dom'
+import Certs from './components/Certs';
+import EmailBuddy from './components/EmailBuddy';
+import EmailBuddyPrivacy from './components/EmailBuddyPrivacy';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Nav />
-        <Home />
-        <About  id="about"/>
-        <div className='skills-container'>
-          <Skills />
-          <Certs />
-        </div>
-        <Project />
-      </div>
+      <Routes>
+        <Route path="/emailbuddy" element={<EmailBuddy />} />
+        <Route path="/emailbuddy/privacy" element={<EmailBuddyPrivacy />} />
+        <Route path="*" element={
+          <div>
+            <Nav />
+            <Home />
+            <About id="about" />
+            <div className='skills-container'>
+              <Skills />
+              <Certs />
+            </div>
+            <Project />
+          </div>
+        } />
+      </Routes>
     </BrowserRouter>
   );
 }
