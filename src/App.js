@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Certs from './components/Certs';
 import EmailBuddy from './components/EmailBuddy';
 import EmailBuddyPrivacy from './components/EmailBuddyPrivacy';
+import EmailBuddyDeleteAccount from './components/EmailBuddyDeleteAccount';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/emailbuddy" element={<EmailBuddy />} />
         <Route path="/emailbuddy/privacy" element={<EmailBuddyPrivacy />} />
+        <Route path="/emailbuddy/delete-account" element={<EmailBuddyDeleteAccount />} />
         <Route path="*" element={
           <div>
             <Nav />
